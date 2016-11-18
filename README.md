@@ -1,4 +1,4 @@
-sjh-eg-add-ang2
+# sjh-eg-add-ang2
 
 This is a learning project that starts with a Node express project with jade and adds angular2 to it.
 
@@ -8,11 +8,11 @@ The basis for this project is https://github.com/bolducp/Express_Angular2_Twitte
 
 
 
-View App
+# View the application
 
 Deployed via Heroku here: TBD
 
-Usage
+# Download and prepare for local use
 
 1: clone the repo
 
@@ -29,13 +29,13 @@ TWITTER_CONSUMER_SECRET=your_key_here
 TWITTER_ACCESS_TOKEN_KEY=your_key_here
 TWITTER_ACCESS_TOKEN_SECRET=your_key_here
 
-To run the project as-is
+# To run the project as-is
 
 1: Cd to the client subdirectory an run 'tsc' to compile all the Typescript files to JavaScript
 
 2: Cd to the root of the project and run 'npm start'
 
-To develop the project
+# To develop the project
 
 1: Start two terminal windows
 
