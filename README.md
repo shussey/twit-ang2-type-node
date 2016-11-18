@@ -24,10 +24,10 @@ Deployed via Heroku here: TBD
 
 4: fillout the .env.template and copy it as ".env". It should include the following keys:
 
-TWITTER_CONSUMER_KEY=your_key_here
-TWITTER_CONSUMER_SECRET=your_key_here
-TWITTER_ACCESS_TOKEN_KEY=your_key_here
-TWITTER_ACCESS_TOKEN_SECRET=your_key_here
+TWITTER_CONSUMER_KEY=your_key_here<br>
+TWITTER_CONSUMER_SECRET=your_key_here<br>
+TWITTER_ACCESS_TOKEN_KEY=your_key_here<br>
+TWITTER_ACCESS_TOKEN_SECRET=your_key_here<br>
 
 # To run the project as-is
 
@@ -41,6 +41,9 @@ TWITTER_ACCESS_TOKEN_SECRET=your_key_here
 
 2: In the first, assuming you have nodemon installed, run 'nodemon' to start the whole applicaiton on http://localhost:3000
 
-3: In the second run 'npm start'. this will perform monitoring and auto compilation of your Typescript files. It also starts a webserver for just the client subfolder of the project on http://localhost:3001 and launches a dynamically refreshing browser session. Although useful to see if changes to the client app are letting it compile successfully, this browser session does not have access to the node server services so it will not function completely.
+3: In the second run 'npm start'. 
+This will perform monitoring and auto compilation of your Typescript files.<br>
+It also starts a webserver for just the client subfolder of the project on http://localhost:3001 and launches a dynamically refreshing browser session. <br>
+Although useful to see if changes to the client app are letting it compile successfully, this browser session does not have access to the node server services so it will not function completely.<br>
 
 4: Navigate to http://localhost:3000 in a second browser window or tab. This is the complete application.
