@@ -4,7 +4,7 @@ This is a learning project that starts with a Node express project with jade and
 
 The tricky part is that there are node services running in the server portion of this project that the angular part running in the browser has to call and consume.
 
-The basis for this project is https://github.com/bolducp/Express_Angular2_Twitter_App although I found quite a lot of changes and tweaks were required for me to get it working
+The basis for this project is `https://github.com/bolducp/Express_Angular2_Twitter_App` although I found quite a lot of changes and tweaks were required for me to get it working
 
 
 
@@ -16,13 +16,13 @@ Deployed here: TBD
 
 1. Clone the repo
 
-2. Cd to the root of the project and run 'npm install'
+2. Cd to the root of the project and run `npm install`
 
-3. Cd to the client subfolder and run 'npm install'
+3. Cd to the client subfolder and run `npm install`
 
 4. Get developer API keys from Twitter
 
-5. Fillout the .env.template and copy it as ".env". It should include the following keys:
+5. Fillout the `.env.template` and copy it to `.env`. It should include the following keys:
 ```javascript
 TWITTER_CONSUMER_KEY=your_key_here
 TWITTER_CONSUMER_SECRET=your_key_here
@@ -43,8 +43,8 @@ TWITTER_ACCESS_TOKEN_SECRET=your_key_here
 
 3. In the second run `npm start` 
     * This will perform monitoring and auto compilation of your Typescript files.
-    * It also starts a webserver for just the client subfolder of the project on http://localhost:3001 and launches a dynamically refreshing browser session.
-    * Although useful to see if changes to the client app are letting it compile successfully, this browser session does not have access to the node server services so it will not function completely.<br>
+    * It also starts a webserver for just the client subfolder of the project on `http://localhost:3001` and launches a dynamically refreshing browser session.
+    * Although useful to see if changes to the client app are letting it compile successfully, this browser session does not have access to the node server services so it will not function completely.
 
 4. Navigate to `http://localhost:3000` in a second browser window or tab. 
     * This is the complete application.
