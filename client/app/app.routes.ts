@@ -6,8 +6,7 @@ import { NothingComponent } from './nothing.component';
 // Route Configuration
 export const routes: Routes = [
   {
-    path: '',
-    redirectTo: '/nothing',
+    path: '', redirectTo: '/tweets',
     pathMatch: 'full'
   },
   { path: 'nothing', component: NothingComponent },
