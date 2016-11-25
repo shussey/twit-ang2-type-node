@@ -5,12 +5,12 @@ import { TwitterDatePipe } from './twitter-dates.pipe';
 import { User } from './user';
 
 @Component({
-  selector: 'corc-followers',
+  selector: 'followers',
   templateUrl: 'app/followers.component.html',
   styleUrls: [ 'app/followers.component.css' ]
 })
 
-export class FollowersComponent implements OnInit {
+export class FollowersNASAComponent implements OnInit {
   errorMessage: string;
   users: User[];
   mode = 'Observable';
@@ -18,7 +18,7 @@ export class FollowersComponent implements OnInit {
   constructor(private _TwitterService: TwitterService) { }
 
   ngOnInit() {
-   this._TwitterService.getFollowers()
+   this._TwitterService.getFollowersNASA()
      .subscribe(
         users => this.users = users,
         error =>  this.errorMessage = <any>error);

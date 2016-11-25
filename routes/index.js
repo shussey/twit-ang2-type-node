@@ -13,8 +13,8 @@ var client = new Twitter({
 
 // console.log(process.env);
 
-router.get('/app/tweets', function(req, res, next) {
-  var params = {screen_name: 'maccladie'};
+router.get('/app/tweetsNASA', function(req, res, next) {
+  var params = {screen_name: 'NASA'};
   client.get('statuses/user_timeline', params, function(error, tweets, response) {
     if (!error) {
       //console.log(tweets)
@@ -23,20 +23,24 @@ router.get('/app/tweets', function(req, res, next) {
   });
 });
 
-router.get('/app/followers', function(req, res, next) {
-  var params = {screen_name: 'maccladie', count: 200};
+router.get('/app/tweetsLADYGAGA', function(req, res, next) {
+  var params = {screen_name: 'LADYGAGA'};
+  client.get('statuses/user_timeline', params, function(error, tweets, response) {
+    if (!error) {
+      //console.log(tweets)
+      res.send(tweets)
+    }
+  });
+});
+
+router.get('/app/followersNASA', function(req, res, next) {
+  var params = {screen_name: 'NASA', count: 200};
   client.get('followers/list', params, function(error, followers, response){
     if(error) throw error;
     res.send(followers.users);
   });
 });
 
-router.get('/app/corc-tweets', function(req, res, next) {
-  twitter.get('search/tweets', { q: "Corcoran Real Estate"}, function(error, tweets, response){
-    if(error) throw error;
-    res.send(tweets.statuses);
-  });
-});
 
 router.get('/stream', function(req, res, next) {
   var params = {track: 'NYC'};
