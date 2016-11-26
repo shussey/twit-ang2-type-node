@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
 
 @Component({
   template: `
-    <h2>Nothing</h2>
-    <p>Nothing to see here</p>`
+    <h2>Landing page</h2>
+    <p>This page is intentionally left blank</p>`
 })
 
 // Component class

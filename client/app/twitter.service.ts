@@ -10,14 +10,19 @@ import { User } from './user';
 export class TwitterService {
   constructor (private http: Http) {}
 
-  getTweets(): Observable<Tweet[]> {
-    return this.http.get('app/tweets')
+  getTweetsNASA(): Observable<Tweet[]> {
+    return this.http.get('app/tweetsNASA')
+                    .map(this.extractTweetData)
+                    .catch(this.handleError);
+  }
+  getTweetsLADYGAGA(): Observable<Tweet[]> {
+    return this.http.get('app/tweetsLADYGAGA')
                     .map(this.extractTweetData)
                     .catch(this.handleError);
   }
 
-  getFollowers(): Observable<User[]> {
-    return this.http.get('app/followers')
+  getFollowersNASA(): Observable<User[]> {
+    return this.http.get('app/followersNASA')
                     .map(this.extractUserData)
                     .catch(this.handleError);
   }
