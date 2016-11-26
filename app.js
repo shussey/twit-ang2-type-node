@@ -9,6 +9,11 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
+// views variable set to full path to /views folder
+app.set('views', __dirname + '/views');
+// The jade view engine? Doesnt seem to be used in this project
+app.set('view engine', 'jade');
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
