@@ -5,7 +5,7 @@
 system-config.js*
 # client/app/**/*.js
 client/app/**/*.map
-client/node_modules
+# client/node_modules
 client/jspm_packages
 bower_components
 aot/*
