@@ -1,4 +1,5 @@
 var express = require('express');
+var cors = require('cors');
 var path = require('path');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -8,6 +9,8 @@ var bodyParser = require('body-parser');
 require('dotenv').config();
 
 var app = express();
+
+app.use(cors());
 
 // views variable set to full path to /views folder
 //app.set('views', __dirname + '/views');
