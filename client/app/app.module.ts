@@ -7,12 +7,9 @@ import { HttpModule, JsonpModule } from '@angular/http';
 
 // Declarations
 import { AppComponent }       from './app.component';
-
 import { NothingComponent } from './nothing.component';
-import { FollowersNASAComponent } from './followersNASA.component';
-import { TweetsNASAComponent } from './tweetsNASA.component';
-import { TweetsLADYGAGAComponent } from './tweetsLADYGAGA.component';
-
+import { FollowersComponent } from './followers.component';
+import { TweetsComponent } from './tweets.component';
 import { TwitterService } from './twitter.service';
 import { TwitterDatePipe, TwitterDateWithTimePipe } from './twitter-dates.pipe';
 
@@ -30,9 +27,8 @@ import { routing } from './app.routes';
   declarations: [ 
     AppComponent,
     NothingComponent,
-    FollowersNASAComponent,
-    TweetsNASAComponent,
-    TweetsLADYGAGAComponent,
+    FollowersComponent,
+    TweetsComponent,
     TwitterDatePipe, 
     TwitterDateWithTimePipe 
     ],  

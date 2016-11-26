@@ -1,25 +1,17 @@
 <h3>Tweets</h3>
-<div class="table-responsive">
-  <table class="table">
-    <thead>
-        <tr>
-        <td>Picture</td>
-        <td>Name</td>
-        <td>Location</td>
-        <td>Time</td>
-        <td>Followers</td>
-        <td>Tweet</td>
-        </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let tweet of tweets">
-        <td><img src="{{tweet.user.profile_image_url}}" alt=""></td>
-        <td>{{tweet.user.name}}</td>
-        <td>{{tweet.user.location}}</td>
-        <td>{{tweet.created_at | twitterDateWithTime}}</td>
-        <td>{{tweet.user.followers_count}}</td>
-        <td>{{tweet.text}}</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<div *ngFor="let tweet of tweets">
+  <div class="row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-1">
+      <img src="{{tweet.user.profile_image_url}}" alt="">
+    </div>
+    <div class="col-sm-3">Name: {{tweet.user.name}}</div>
+    <div class="col-sm-2">Location: {{tweet.user.location}}</div>
+    <div class="col-sm-2">Time: {{tweet.created_at | twitterDateWithTime}}</div>
+    <div class="col-sm-2">Followers: {{tweet.user.followers_count}}</div>
+  </div>
+    <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-11 tweettext">{{tweet.text}}</div>
+    </div>
+  </div>

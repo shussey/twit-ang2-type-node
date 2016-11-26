@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 
 import { TwitterService } from './twitter.service';
-import { FollowersNASAComponent } from './followersNASA.component';
-import { TweetsNASAComponent } from './tweetsNASA.component';
-import { TweetsLADYGAGAComponent } from './tweetsLADYGAGA.component';
+import { FollowersComponent } from './followers.component';
+import { TweetsComponent } from './tweets.component';
 
 @Component({
   selector: 'my-app',
