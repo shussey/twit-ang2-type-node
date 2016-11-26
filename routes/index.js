@@ -42,23 +42,6 @@ router.get('/app/followersNASA', function(req, res, next) {
 });
 
 
-router.get('/stream', function(req, res, next) {
-  var params = {track: 'NYC'};
-  client.stream('statuses/filter', params, function(stream) {
-    stream.on('data',function(tweet){
-      console.log(tweet);
-    });
-    stream.on('error',function(error){
-      throw error;
-    });
-  });
-});
 
-router.get('/rate_limits', function(req, res, next) {
-  twitter.get('application/rate_limit_status', { screen_name: "corcorangroup"}, function(error, limits, response){
-    if(error) throw error;
-    res.send(limits);
-  });
-});
 
 module.exports = router;
