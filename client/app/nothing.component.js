@@ -16,7 +16,7 @@ var NothingComponent = (function () {
     }
     NothingComponent = __decorate([
         core_1.Component({
-            template: "\n    <h2>Nothing</h2>\n    <p>Nothing to see here</p>"
+            template: "\n    <h2>Landing page</h2>\n    <p>This page is intentionally left blank</p>"
         }), 
         __metadata('design:paramtypes', [])
     ], NothingComponent);

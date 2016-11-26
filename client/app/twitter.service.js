@@ -16,13 +16,18 @@ var TwitterService = (function () {
     function TwitterService(http) {
         this.http = http;
     }
-    TwitterService.prototype.getTweets = function () {
-        return this.http.get('app/tweets')
+    TwitterService.prototype.getTweetsNASA = function () {
+        return this.http.get('app/tweetsNASA')
             .map(this.extractTweetData)
             .catch(this.handleError);
     };
-    TwitterService.prototype.getFollowers = function () {
-        return this.http.get('app/followers')
+    TwitterService.prototype.getTweetsLADYGAGA = function () {
+        return this.http.get('app/tweetsLADYGAGA')
+            .map(this.extractTweetData)
+            .catch(this.handleError);
+    };
+    TwitterService.prototype.getFollowersNASA = function () {
+        return this.http.get('app/followersNASA')
             .map(this.extractUserData)
             .catch(this.handleError);
     };
