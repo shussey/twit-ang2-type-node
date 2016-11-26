@@ -17,9 +17,8 @@ var http_1 = require('@angular/http');
 // Declarations
 var app_component_1 = require('./app.component');
 var nothing_component_1 = require('./nothing.component');
-var followersNASA_component_1 = require('./followersNASA.component');
-var tweetsNASA_component_1 = require('./tweetsNASA.component');
-var tweetsLADYGAGA_component_1 = require('./tweetsLADYGAGA.component');
+var followers_component_1 = require('./followers.component');
+var tweets_component_1 = require('./tweets.component');
 var twitter_service_1 = require('./twitter.service');
 var twitter_dates_pipe_1 = require('./twitter-dates.pipe');
 var app_routes_1 = require('./app.routes');
@@ -39,9 +38,8 @@ var AppModule = (function () {
             declarations: [
                 app_component_1.AppComponent,
                 nothing_component_1.NothingComponent,
-                followersNASA_component_1.FollowersNASAComponent,
-                tweetsNASA_component_1.TweetsNASAComponent,
-                tweetsLADYGAGA_component_1.TweetsLADYGAGAComponent,
+                followers_component_1.FollowersComponent,
+                tweets_component_1.TweetsComponent,
                 twitter_dates_pipe_1.TwitterDatePipe,
                 twitter_dates_pipe_1.TwitterDateWithTimePipe
             ],

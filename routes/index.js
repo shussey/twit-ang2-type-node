@@ -33,6 +33,28 @@ router.get('/app/followers', function(req, res, next) {
 
 router.get('/app/corc-tweets', function(req, res, next) {
   twitter.get('search/tweets', { q: "Corcoran Real Estate"}, function(error, tweets, response){
+<<<<<<< HEAD
+=======
+    if(error) throw error;
+    res.send(tweets.statuses);
+  });
+});
+
+router.get('/stream', function(req, res, next) {
+  var params = {track: 'NYC'};
+  client.stream('statuses/filter', params, function(stream) {
+    stream.on('data',function(tweet){
+      console.log(tweet);
+    });
+    stream.on('error',function(error){
+      throw error;
+    });
+  });
+});
+
+router.get('/rate_limits', function(req, res, next) {
+  twitter.get('application/rate_limit_status', { screen_name: "corcorangroup"}, function(error, limits, response){
+>>>>>>> parent of d9d4bc5... Style and genericising
     if(error) throw error;
     res.send(tweets.statuses);
   });

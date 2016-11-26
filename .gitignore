@@ -3,7 +3,7 @@
 
 # Angular2 for the client subfolder
 system-config.js*
-# client/app/**/*.js
+client/app/**/*.js
 client/app/**/*.map
 client/node_modules
 client/jspm_packages
